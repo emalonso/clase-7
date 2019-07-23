@@ -1,0 +1,42 @@
+<html>
+	<head> 
+		<title>Hola ELI</title>
+	</head>
+	<body>
+		<h1>Eli, vamos a cenar?</h>
+		<p><b>no te preocupes</p></b><i>
+		<hr>
+		<img src="sushi.jpg" alt="comida" width="80"height="80">
+		<hr>
+		<p>Erick paga</p>
+		<table>
+			<tr>
+				<th>restaurante</th><th>tipo de comida</th>
+			</tr>
+			<tr>
+				<td>florentino</th><td>italiana</td>
+			</tr>
+						<tr>
+				<td>wok</th><td>oriental</td>
+			</tr>
+		</table>
+		<script>
+		function draw(){
+		  var ctx = document.querySelector("canvas").getContext("2d");
+		  
+		  ctx.fillStyle = "#ffff00";
+		  ctx.fillRect(10, 10, 50, 50);
+		  
+		  var my_gradient=ctx.createLinearGradient(0,0,0,170);
+		  my_gradient.addColorStop(0,"navy");
+		  my_gradient.addColorStop(1,"white");
+		  ctx.fillStyle=my_gradient;
+		  ctx.fillRect(40,40,70,70);
+		}
+		window.onload = draw;
+		</script>
+		...
+<canvas></canvas>
+		
+	</body>
+</html>
